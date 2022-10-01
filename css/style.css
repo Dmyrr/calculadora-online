@@ -1,0 +1,118 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(135deg, #478579, #1e695c);
+    background-attachment: fixed;
+}
+
+header {
+    margin: 20px;
+}
+
+header>h1 {
+    font: 2.5em 'Iceberg', cursive;
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+main {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F29F05;
+    border-radius: 20px;
+    border-style: outset;
+    border-color: #F28705;
+    border-width: 8px;
+}
+
+#tela>output {
+    display: block;
+    width: 290px;
+    height: 55px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    border-radius: 10px;
+    border-style: outset;
+    border-color: #F23030;
+    border-width: 4px;
+    padding: 0 5px;
+}
+
+.letras-tela {
+    font: 3em 'Iceberg', cursive;
+    color: #4d0f0f;
+    text-align: right;
+    letter-spacing: 5px;
+}
+
+#teclas {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#teclas>button:nth-child(16) {
+    grid-column-start: 4;
+    grid-row: 4/6;
+}
+
+#teclas>button:nth-child(17) {
+    grid-column: 1/3;
+}
+
+#teclas>button {
+    margin: 0;
+    font: 1.5em 'Iceberg', sans-serif;
+}
+
+.btn-numeros {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    border-radius: 10px;
+    border-width: 3px;
+    color: #F23030;
+}
+
+.btn-numeros:active {
+    background-color: #b6b6b6;
+    color: #ffffff;
+}
+
+.btn-operacoes {
+    background-color: #F23030;
+    border-color: #F23030;
+    border-radius: 10px;
+    border-width: 3px;
+    color: #ffffff;
+}
+
+.btn-operacoes:active {
+    background-color: #c92121;
+}
+
+footer {
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+footer>span {
+    font: 1.2em 'Iceberg', cursive;
+    color: #ffffff;
+}
+
+footer>span>a {
+    text-decoration: none;
+    color: #F29F05;
+}
